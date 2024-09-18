@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    position: relative;
+    font-size: 5em;
+    letter-spacing: 10px;
+    color: #c405f9;
+}
+h1::before{
+    content: 'Coding';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e6e4e4;
+    overflow: hidden;
+    animation: fill 6s linear infinite;
+}
+@keyframes fill{
+    0%{
+        height: 25%;
+    }
+    25%{
+        height: 65%;
+    }
+    50%{
+        height: 85%;
+    }
+    75%{
+        height: 40%;
+    }
+    100%{
+        height: 25%;
+    }
+}

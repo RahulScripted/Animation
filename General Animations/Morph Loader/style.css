@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    animation: load 2s linear infinite;
+}
+@keyframes load{
+    0%,
+    100%{
+        transform: rotate(0deg);
+        border-radius: 50%;
+        background-color: #b422e9;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-radius: 0;
+        background-color: #e71c63;
+    }
+}
